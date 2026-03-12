@@ -1,0 +1,103 @@
+:root {
+  --primary-green: #2d5a27;
+  --bg-grey: #f9f9f9;
+  --text-dark: #333;
+  --border-grey: #ddd;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: var(--text-dark);
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+main {
+  display: flex; 
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.plant-list-container {
+  flex: 2;
+}
+
+.plant-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}
+
+.plant-card {
+  border: 1px solid #f0f0f0;
+  padding: 15px;
+  text-align: left;
+  background: white;
+}
+
+.plant-card span {
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.plant-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.plant-card button {
+  width: 100%;
+  background: #efefef;
+  border: 1px solid #767676;
+  padding: 5px;
+  cursor: pointer;
+}
+
+aside {
+  flex: 1; 
+}
+
+.cart-container h2 {
+  margin-top: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 120px;
+}
+
+.cart-item button {
+  background: #efefef;
+  border: 1px solid #767676;
+  padding: 2px 20px;
+  cursor: pointer;
+  min-width: 80px; 
+}
+
+.quantity-display {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
